@@ -8,12 +8,12 @@
 import SwiftUI
 
 // MARK: - Primary Button Styles
-public extension ButtonStyle where Self == GABaseButtonStyle {
+extension ButtonStyle where Self == GABaseButtonStyle {
   
-  static var primary: GABaseButtonStyle {
-    GABaseButtonStyle(type: .primary, style: .pill, size: .regular) }  
+  public static var primary: GABaseButtonStyle {
+    GABaseButtonStyle(type: .primary, style: .pill, size: .regular) }
  
-  static func primary(style: GAButtonStyle = .pill, size: GAButtonSize = .regular) -> GABaseButtonStyle {
+  public static func primary(style: GAButtonStyle = .pill, size: GAButtonSize = .regular) -> GABaseButtonStyle {
     GABaseButtonStyle(type: .primary, style: style, size: size)
   }
 }
@@ -46,6 +46,13 @@ public struct GABaseButtonStyle: ButtonStyle {
   let type: GAButtonType
   let style: GAButtonStyle
   let size: GAButtonSize
+  
+  public init(type: GAButtonType, style: GAButtonStyle, size: GAButtonSize) {
+    self.type = type
+    self.style = style
+    self.size = size
+  }
+  
   public func makeBody(configuration: Configuration) -> some View {
     configuration
       .label
