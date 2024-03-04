@@ -4,6 +4,5 @@
 
 import SwiftUI
 
-public enum GSDS {
-  
-}
+/// Base design system
+public enum GSDS {}
