@@ -4,7 +4,6 @@
 //
 //  Created by Neo Golightly on 14.02.24.
 //
-
 import Foundation
 
 public enum GAButtonSize: CaseIterable, Identifiable {
