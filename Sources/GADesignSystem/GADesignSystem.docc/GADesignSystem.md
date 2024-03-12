@@ -5,7 +5,7 @@
     @Available(iOS, introduced: "17.0")
 }
 
-An iOS and macOS design system for the city of goslar
+An iOS and macOS design system for the City of Goslar
 
 ## Overview
 
